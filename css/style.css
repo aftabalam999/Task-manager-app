@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***********
+    Custom classes
+***********/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.wrong {
+  color: red;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  width: 30%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.label {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/***********
+   End code Custom classes
+***********/
+
+/***********
+Custom Elements design
+***********/
+a {
+  text-decoration: none;
+}
+
+input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+/***********
+Custom Elements design End
+***********/
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* **********
+    Register Page Styles
+***************/
+#main-container {
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/bg.jpg);
+  background-position: center;
+  padding: 1rem;
+}
+
+.card {
+  width: 40%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+
+.card form {
+  align-items: flex-start;
+}
+
+/************
+    Dashboard Page Styles
+*************/
+
+#taskSection {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.pending-container,
+.completed-container {
+  width: 80%;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.pending-container {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.completed-container {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.task-navbar,
+.header {
+  justify-content: space-around;
+}
+
+.header {
+  width: 80%;
+  background-color: rgba(25, 55, 255, 0.2);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+#logout {
+  cursor: pointer;
+  width: 10%;
+  color: red;
+}
+
+#allTasks {
+  width: 100%;
+  padding: 1rem;
+}
+
+.task-con {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.task {
+  width: 100%;
+}
+.check {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.content {
+  width: 60%;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+#addMainCon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}

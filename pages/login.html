@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <!-- =================
+        Login page
+    =================== -->
+    <div id="main-container" class="flex">
+      <div class="card">
+        <h1>Login</h1>
+        <form action="#" class="flex column" id="loginForm" autocomplete="off">
+          <label for="logInEmail" class="label">Email</label>
+          <input type="email" name="email" class="input" id="logInEmail" required />
+          <p class="wrong hidden" id="emailIncorrect">email is incorrect</p>
+          <label for="logInPassword" class="label">Password</label>
+          <input type="password" name="password" class="input" id="logInPassword" required />
+          <p class="wrong hidden" id="passIncorrect">password is incorrect</p>
+          <button type="submit" class="button">Submit</button>
+        </form>
+        <p class="text-center">Don't have account ? <a href="../index.html">Signup</a></p> 
+      </div>
+    </div>
+  </body>
+  <script src="../js/login.js"></script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager | Signup Page</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- =================
+        Signup page
+    =================== -->
+
+    <div id="main-container" class="flex">
+      <div class="card">
+        <h1>Create an account</h1>
+        <form action="#" class="flex column" id="signupForm">
+          <label for="username" class="label">Name</label>
+          <input
+            type="text"
+            name="username"
+            class="input"
+            id="username"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="email" class="label">Email</label>
+          <input type="email" name="email" class="input" id="email" placeholder="Enter your email" required />
+          <label for="password" class="label">Password</label>
+          <input type="password" name="password" class="input" id="password" placeholder="Enter your password" required />
+          <button type="submit" class="button" id="signUpBtn">Submit</button> 
+        </form>
+        <p class="text-center">Already have account ? <a href="./pages/login.html">Login</a></p>
+      </div>
+    </div>
+
+  </body>
+  <script src="./js/script.js"></script>
+</html>

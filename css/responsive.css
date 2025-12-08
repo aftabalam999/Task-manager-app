@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .register-card {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .register-card form label {
+    font-size: 1rem;
+  }
+}

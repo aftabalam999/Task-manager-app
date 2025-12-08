@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager | Dashboard</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <!-- =================
+        Dashboard page
+    =================== -->
+    <div id="main-container" class="flex column fixed">
+      <div class="header flex">
+        <h1>Task Manager</h1>
+        <button id="logout" class="button">Log out</button>
+      </div>
+
+      <section class="flex" id="taskSection">
+        <div class="pending-container card">
+          <div class="task-navbar flex">
+            <h1 class="text-center">Pending Task</h1>
+            <button id="addTask" class="button">Add Task</button>
+          </div>
+          <div id="allTasks">
+            <ul id="ul">
+              
+            </ul>
+          </div>
+        </div>
+        <div class="completed-container card">
+          <h1 class="text-center">Completed Task</h1>
+        </div>
+      </section>
+
+      <section id="addMainCon" class="flex hidden">
+        <div id="addTaskSection" class="card">
+          <label for="taskTitle" class="label">Title</label>
+          <input type="text" name="task-title" id="taskTitle" class="input" />
+          <label for="taskDesc" class="label">Description</label> <br />
+          <textarea
+            name="description"
+            id="taskDesc"
+            class="input"
+            rows="6"
+          ></textarea>
+
+          <button class="button" id="addTaskBtn">Add Task</button>
+          <button class="button" id="cancelBtn">Cancel</button>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="../js/dashboard.js"></script>
+</html>
