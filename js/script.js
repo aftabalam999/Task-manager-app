@@ -16,16 +16,16 @@ window.addEventListener("DOMContentLoaded", () => {
     window.location.href = "./pages/dashboard.html";
   });
 
-  const localStorageItem = {
-    emailValue: localStorage.getItem("email"),
-    passwordValue: localStorage.getItem("password"),
-  };
+  // const localStorageItem = {
+  //   emailValue: localStorage.getItem("email"),
+  //   passwordValue: localStorage.getItem("password"),
+  // };
 
-  const localEmail = localStorageItem.emailValue;
-  const localPass = localStorageItem.passwordValue;
-  window.addEventListener("load", () => {
-    autoLogin(localEmail, localPass);
-  });
+  // const localEmail = localStorageItem.emailValue;
+  // const localPass = localStorageItem.passwordValue;
+  // window.addEventListener("load", () => {
+  //   autoLogin(localEmail, localPass);
+  // });
 
 //   function autoLogin(email, pass) {
 //     if (!email && !pass) {

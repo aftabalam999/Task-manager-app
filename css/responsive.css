@@ -7,4 +7,73 @@
   .register-card form label {
     font-size: 1rem;
   }
+
+  #taskSection {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  #logout {
+    width: 50%;
+    margin-top: 10px;
+    padding: 0.5rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .task-navbar h1,
+  .completed-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .completed-container h1 {
+    margin-bottom: 0.3rem;
+  }
+
+  #addTask {
+    width: 40%;
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .register-con {
+    background: url(../assets/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .account-title {
+    font-size: 1.7rem;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #signUpBtn {
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
 }
