@@ -1,6 +1,6 @@
 document.getElementById('logout').addEventListener('click', ()=>{
     window.location.href = "../index.html";
-})
+}) 
 
 const addtask = document.getElementById('addTask');
 const pendingTask = {

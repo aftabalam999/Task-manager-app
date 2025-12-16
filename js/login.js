@@ -14,9 +14,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const localEmail = localStorageItem.emailValue;
   const localPass = localStorageItem.passwordValue;
-  window.addEventListener('load', ()=>{
-    autoLogin(localEmail,localPass)
-  })
+  window.addEventListener("load", () => {
+    autoLogin(localEmail, localPass);
+  });
 
   loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -32,22 +32,27 @@ window.addEventListener("DOMContentLoaded", () => {
         window.location.href = "./dashboard.html";
       } else {
         loginFormInput.passIncorrect.classList.remove("hidden");
-        emailInputValue = '';
-        loginFormInput.logInEmail.value = ''
+        emailInputValue = "";
+        loginFormInput.logInEmail.value = "";
+        setTimeout(() => {
+          loginFormInput.passIncorrect.classList.add("hidden");
+        }, 1000);
       }
     } else {
-        loginFormInput.emailIncorrect.classList.remove('hidden');
-      loginFormInput.logInEmail.value = '';
-      loginFormInput.logInEmail.value=''
+      loginFormInput.emailIncorrect.classList.remove("hidden");
+      loginFormInput.logInEmail.value = "";
+      setTimeout(() => {
+        loginFormInput.emailIncorrect.classList.add("hidden");
+      }, 1000);
     }
   });
 
-  function autoLogin(email, pass){
-    if(!email && !pass){
-        console.log('There is no key');
-        return;
-    }else{
-        window.location.href = "./dashboard.html";
+  function autoLogin(email, pass) {
+    if (!email && !pass) {
+      console.log("There is no key");
+      return;
+    } else {
+      window.location.href = "./dashboard.html";
     }
   }
 });
